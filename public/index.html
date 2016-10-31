@@ -2,28 +2,29 @@
 <html lang="en">
   <head>
     <title>Jade</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- main styles-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container-fluid">
-      <ul class="main-menu">
-        <li class="main-menu__page1"><a href="#">page 1</a></li>
-        <li class="main-menu__page2"><a href="#">page 2</a></li>
-        <li class="main-menu__page3"><a href="#">page 3</a></li>
-      </ul>
-      <h1>Jade - node template engine</h1>
-      <div id="container" class="col">
-        <p>You are amazing</p>
-        <p>
-          Jade is a terse and simple
-          templating language with a
-          strong focus on performance
-          and powerful features.
-        </p>
-        <h1>This is just a test3</h1>
-        <p>This is know</p>
-      </div>
+    <div class="container">
+      <header>
+        <div class="main-menu">
+          <ul class="main-menu-ul">
+            <li class="main-menu-ul__page1"><a href="#">page 1</a></li>
+            <li class="main-menu-ul__page2"><a href="#">page 2</a></li>
+            <li class="main-menu-ul__page3"><a href="#">page 3</a></li>
+          </ul>
+        </div>
+      </header>
     </div>
+    <div class="content">
+      <h1>This is just a test</h1>
+    </div>
+    <footer>
+      <h1>This is the footer content</h1>
+    </footer>
+    <!-- main-scripts-->
+    <script src="main-script.js"></script>
   </body>
 </html>

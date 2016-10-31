@@ -1,0 +1,38 @@
+// horizontal menu
+
+
+@mixin main-menu-h(
+  $back: #eee,
+  $color: #000,
+  $hover: rgba(#000, .1),
+  $height: 2.5em,
+  $separation: 3em,
+  $font-size: 1.1em,
+  $text-transform: capitalize,
+  $font-family: Arial
+){
+  display: table;
+  background: $back;
+
+  &, ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } // ul , li
+  li {
+    position: relative;
+    float: left;
+    a {
+      text-decoration: none;
+      color: $color;
+      line-height: $height;
+      display: block;
+      padding: 0 ($separation / 1.5 );
+      font-size: $font-size;
+      text-transform: $text-transform;
+      &:hover {
+        background: rgba(#000, .1);
+      } // a hover
+    } // li
+  } // li
+} // mixin

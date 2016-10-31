@@ -1,0 +1,25 @@
+include ../mixins/mixins
+doctype html
+html(lang='en')
+    head
+        title Jade
+        // main styles
+        include ../base/styles
+        block additional-styles
+    body
+        .container
+            header
+                .main-menu
+                    +menu([
+                        {'title':'page 1', 'link':'#', 'itemClass':'page1'},
+                        {'title':'page 2', 'link':'#', 'itemClass':'page2'},
+                        {'title': 'page 3', 'link': '#', 'itemClass':'page3'}
+                    ], 'main-menu-ul')
+        .content
+            block content
+        footer
+            block footer
+
+        // main-scripts
+        include ../base/scripts
+        block scripts

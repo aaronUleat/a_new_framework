@@ -1,25 +1,7 @@
-include ../mixins/mixins
-
-doctype html
-html(lang='en')
-    head
-        title Jade
-        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
-        link(rel="stylesheet" href="css/style.css")
-    body
-        .container-fluid
-            +menu([
-                {'title':'page 1', 'link':'#', 'itemClass':'page1'},
-                {'title':'page 2', 'link':'#', 'itemClass':'page2'},
-                {'title': 'page 3', 'link': '#', 'itemClass':'page3'}
-            ], 'main-menu')
-            h1 Jade - node template engine
-            #container.col
-                p You are amazing
-                p
-                    | Jade is a terse and simple
-                    | templating language with a
-                    | strong focus on performance
-                    | and powerful features.
-                h1 This is just a test3
-                p This is know
+extends ../templates/main-template
+block content
+    h1 This is just a test
+block footer
+    h1 This is the footer content
+block scripts
+    script(src="main-script.js")

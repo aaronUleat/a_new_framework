@@ -1,0 +1,16 @@
+header {
+  margin-top: $gutter;
+  .main-menu {
+    @include main-menu-h(
+      $back: color(sky-color),
+      $color: white,
+      $hover: rgba(#000, .1),
+      $height: 2.5em,
+      $separation: 3em,
+      $font-size: 1.1em,
+      $text-transform: uppercase
+    );
+  } // main-menu
+} // header
+
+
